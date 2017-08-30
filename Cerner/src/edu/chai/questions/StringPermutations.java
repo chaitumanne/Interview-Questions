@@ -41,7 +41,7 @@ public class StringPermutations {
 	        // For each string, insert the last character to all possible postions
 	        // and add them to the new list
 	        for (int i = 0; i <= s.length(); i++) {
-	            String ps = new StringBuffer(s).insert(i, c).toString();
+	            String ps = new StringBuilder(s).insert(i, c).toString();
 	            res.add(ps);
 	        }
 	    }
@@ -51,7 +51,7 @@ public class StringPermutations {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(permutation("abc"));
+		System.out.println(permutation("abcd"));
 	}
 
 }
